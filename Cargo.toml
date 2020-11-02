@@ -3,5 +3,7 @@ members = [
   "base",
   "ext",
   "app",
+  "test1",
+  "test2",
 ]
 
