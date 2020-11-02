@@ -13,7 +13,7 @@ pub trait Effect {
 }
 
 use serde::{Serialize, Deserialize};
-#[derive(Serialize, Deserialize)]
+#[derive(Debug, PartialEq, Serialize, Deserialize)]
 pub struct ForAllEffect;
 impl ForAllEffect {
     pub fn new() -> Self {

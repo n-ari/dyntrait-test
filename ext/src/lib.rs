@@ -1,7 +1,7 @@
 use base::{Object, Effect};
 use serde::{Serialize, Deserialize};
 
-#[derive(Serialize, Deserialize)]
+#[derive(Debug, PartialEq, Serialize, Deserialize)]
 pub struct SpecificEffect {
     id: u32,
 }
