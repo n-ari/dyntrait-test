@@ -1,5 +1,5 @@
-use base::{Object, Effect};
-use serde::{Serialize, Deserialize};
+use base::{Effect, Object};
+use serde::{Deserialize, Serialize};
 
 #[derive(Debug, PartialEq, Serialize, Deserialize)]
 pub struct SpecificEffect {
@@ -16,3 +16,5 @@ impl Effect for SpecificEffect {
         self.id == obj.id
     }
 }
+
+pub fn void() {}

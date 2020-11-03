@@ -1,8 +1,6 @@
-use base::{Effect, ForAllEffect, Object};
-use ext::SpecificEffect;
 #[cfg(test)]
 mod tests {
-    use super::*;
+    use base::{Effect, Object};
     #[test]
     fn it_can_parse() {
         let object = Object::new(3);
@@ -13,7 +11,7 @@ mod tests {
     #[test]
     fn it_also_can_parse() {
         // なぜかこれがないと panic する
-        let _: Box<dyn Effect> = Box::new(SpecificEffect::new(0));
+        ext::void();
         let object = Object::new(3);
         let effect: Box<dyn Effect> =
             serde_json::from_str("{\"type\":\"SpecificEffect\",\"id\":3}").unwrap();
