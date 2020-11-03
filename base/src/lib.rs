@@ -12,8 +12,8 @@ pub trait Effect {
     fn appliable(&self, obj: &Object) -> bool;
 }
 
-use serde::{Serialize, Deserialize};
-#[derive(Debug, PartialEq, Serialize, Deserialize)]
+use serde::{Deserialize, Serialize};
+#[derive(Default, Debug, PartialEq, Serialize, Deserialize)]
 pub struct ForAllEffect;
 impl ForAllEffect {
     pub fn new() -> Self {
@@ -26,4 +26,3 @@ impl Effect for ForAllEffect {
         true
     }
 }
-

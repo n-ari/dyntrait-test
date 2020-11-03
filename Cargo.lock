@@ -29,6 +29,16 @@ dependencies = [
 ]
 
 [[package]]
+name = "dyntrait_de_wrapper"
+version = "0.1.0"
+source = "git+https://github.com/n-ari/dyntrait-de-wrapper?branch=main#469f4ea8ffc7b10a6790af50a05802faa1b52dba"
+dependencies = [
+ "serde",
+ "serde_json",
+ "typetag",
+]
+
+[[package]]
 name = "erased-serde"
 version = "0.3.12"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -171,6 +181,16 @@ name = "test2"
 version = "0.1.0"
 dependencies = [
  "base",
+ "ext",
+ "serde_json",
+]
+
+[[package]]
+name = "test3"
+version = "0.1.0"
+dependencies = [
+ "base",
+ "dyntrait_de_wrapper",
  "ext",
  "serde_json",
 ]
