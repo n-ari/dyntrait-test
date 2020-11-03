@@ -14,7 +14,6 @@ name = "base"
 version = "0.1.0"
 dependencies = [
  "serde",
- "serde_json",
  "typetag",
 ]
 
@@ -53,7 +52,6 @@ version = "0.1.0"
 dependencies = [
  "base",
  "serde",
- "serde_json",
  "typetag",
 ]
 
